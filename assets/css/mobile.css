@@ -22,9 +22,7 @@
 .home-header-section .main-header .navbar-brand {
   margin-right: 181px;
 }
-.home-header-section .main-header {
-  padding: 26px 298px 0 310px;
-}
+
 .about-us-section .about-left-back-img {
   left: -41%;
 }
@@ -73,9 +71,7 @@
   .home-header-section .main-header .navbar-brand {
     margin-right: 80px;
 }
-.home-header-section .main-header {
-  padding: 26px 286px 0 306px;
-}
+
 .home-header-section:before {
   top: -207px;
   left: -228px;
@@ -115,9 +111,7 @@
   top: -230px;
   left: -240px;
 }
-.home-header-section .main-header {
-  padding: 26px 230px 0 280px;
-}
+
 .home-banner-section .banner-container-box .home-banner-text {
   padding-left: 244px;
 }
@@ -185,9 +179,7 @@
 }
 }
 @media screen and (max-width: 1650px) {
-.home-header-section .main-header {
-  padding: 26px 150px 0 283px;
-}
+
 .home-header-section .banner-right-img {
   bottom: 272px;
   right: -451px;
@@ -236,9 +228,7 @@
 }
 }
 @media screen and (max-width: 1550px) {
-.home-header-section .main-header {
-  padding: 26px 100px 0 260px;
-}
+
 .home-header-section:before {
   top: -252px;
   left: -238px;
@@ -346,9 +336,7 @@ h1 {
 }
 
 @media screen and (max-width: 1440px) {
-.home-header-section .main-header {
-    padding: 26px 40px 0 180px;
-}
+
 .home-header-section:before {
   top: -239px;
   left: -272px;
@@ -423,9 +411,9 @@ h1 {
 .banner-container-box .blogs-section-padding {
   padding: 32px 0px 39px 77px;
 }
-.main-header {
+/* .main-header {
   padding: 17px 0px 0 0px; 
-}
+} */
 .banner-container-box .social-icons {
   z-index: 1;
   transition: ease-in-out 0.3s;
@@ -490,9 +478,7 @@ h1 {
 }
 }
 @media screen and (max-width: 1350px) {
-.home-header-section .main-header {
-  padding: 26px 30px 0 180px;
-}
+
 .home-header-section:before {
   top: -257px;
   left: -288px;
@@ -502,9 +488,7 @@ h1 {
 }
 }
 @media screen and (max-width: 1250px) {
-.home-header-section .main-header {
-  padding: 26px 22px 0 112px;
-}
+
 .home-header-section .main-header .navbar-collapse .btn-talk a {
   padding: 17px 30px 17px 30px;
 }
@@ -1033,9 +1017,7 @@ h4 {
   width: 438px;
   margin-left: 0px;
 }
-.home-header-section .main-header {
-  padding: 35px 0px 0 0;
-}
+
 .home-header-section .banner-right-img {
   bottom: 291px;
   right: -733px;
@@ -1684,6 +1666,12 @@ h4 {
 }
 }
 
+@media screen and (max-width: 992px) {
+  .home-header-section .main-header {
+    margin: 0;
+  }
+ }
+
 @media screen and (max-width: 767px) {
 .home-header-section .main-header .navbar-collapse .btn-talk a {
   font-size: 16px;
@@ -1796,9 +1784,7 @@ h4 {
 .banner-img-content {
   padding: 0px 10px 0 10px;
 }
-.main-header {
-  padding: 20px 0px 0 0px;
-}
+
 .banner-img-width {
   width: 62%;
 }
