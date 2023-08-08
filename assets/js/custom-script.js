@@ -98,6 +98,28 @@ $(document).ready(function () {
       });
     }
   });
+
+  var myModal;
+  $(".read-more").click(function () {
+    var contentId = $(this).data("content");
+    var content = $(contentId).html();
+    $("#modal-content").html(content);
+    myModal = new HystModal({
+      catchFocus: true,
+      waitTransitions: true,
+      closeOnEsc: false,
+    });
+    myModal.open("#myModal");
+
+    $(".modal-contact-us-button").click(function () {
+      // if (myModal) {
+      myModal.close();
+      // scrollDivTo("#contact-us-form");
+      // } else {
+      window.location.href = "contact.html";
+      // }
+    });
+  });
 });
 
 $(".count").each(function () {
@@ -181,59 +203,3 @@ window.ityped.init(document.querySelector(".faq-section .ityped"), {
   backSpeed: 150,
   loop: true,
 });
-
-// var form = document.getElementById("contact-form");
-
-// async function handleSubmit(event) {
-//   event.preventDefault();
-//   const nameInput = document.getElementById("name");
-//   const phoneInput = document.getElementById("phone").value;
-//   const emailInput = document.getElementById("email").value;
-//   if (nameInput.value === "") {
-//     nameInput.setAttribute("class", "invalid-input");
-//   } else {
-//     nameInput.removeAttribute("invalid-input");
-//   }
-//   if (phoneInput.value === "") {
-//     phoneInput.setAttribute("class", "invalid-input");
-//   } else {
-//     phoneInput.removeAttribute("invalid-input");
-//   }
-//   if (emailInput.value === "") {
-//     emailInput.setAttribute("class", "invalid-input");
-//   } else {
-//     emailInput.removeAttribute("invalid-input");
-//   }
-
-//   console.log(data);
-//   console.log("event.target");
-
-//   // var status = document.getElementById("my-form-status");
-//   // fetch(event.target.action, {
-//   //   method: form.method,
-//   //   body: data,
-//   //   headers: {
-//   //     Accept: "application/json",
-//   //   },
-//   // })
-//   //   .then((response) => {
-//   //     if (response.ok) {
-//   //       status.innerHTML = "Thanks for your submission!";
-//   //       form.reset();
-//   //     } else {
-//   //       response.json().then((data) => {
-//   //         if (Object.hasOwn(data, "errors")) {
-//   //           status.innerHTML = data["errors"]
-//   //             .map((error) => error["message"])
-//   //             .join(", ");
-//   //         } else {
-//   //           status.innerHTML = "Oops! There was a problem submitting your form";
-//   //         }
-//   //       });
-//   //     }
-//   //   })
-//   //   .catch((error) => {
-//   //     status.innerHTML = "Oops! There was a problem submitting your form";
-//   //   });
-// }
-// form.addEventListener("submit", handleSubmit);

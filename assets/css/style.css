@@ -2373,3 +2373,32 @@ a {
   color: #fff;
   margin: 20px;
 }
+
+.key-items {
+  list-style-type: none;
+  margin-bottom: 40px;
+}
+
+.checkmark, .key-items li {
+  position: relative;
+  padding-left: 0.8em;
+  width: 100%;
+}
+.checkmark::before, .key-items li::before {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  left: -0.5em;
+  top: 0;
+  transform: rotate(45deg);
+  height: 1em;
+  width: 0.5em;
+  border-bottom: 0.15em solid;
+  border-right: 0.15em solid;
+}
+.checkmark:is(li), .key-items li:is(li) {
+  margin-left: 1em;
+}
+.checkmark:is(li):not(:first-child), .key-items li:is(li):not(:first-child) {
+  margin-top: 1em;
+}
