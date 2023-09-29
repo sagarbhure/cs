@@ -1,4 +1,7 @@
 $(document).ready(function () {
+  // Copyright Text
+  $("#copyright-year").text(new Date().getFullYear());
+
   var counters = $(".count");
   var countersQuantity = counters.length;
   var counter = [];
