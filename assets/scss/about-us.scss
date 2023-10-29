@@ -1,0 +1,45 @@
+.about-us-container {
+    background: var(--e-global-color-dark-blue);
+    padding: 3% 5% 0 5%;
+    .about-us-header {
+        color: var(--e-global-color-secondary);
+        margin: 2em 0 3em 0;
+    }
+
+    .about-us-body {
+        color: var(--e-global-color-secondary);
+        margin-bottom: 3em;
+
+        object {
+            display: flex;
+            justify-content: center;
+            margin: 0 auto;
+        }
+
+        .about-us-legend {
+            font-size: 18px;
+            line-height: 24px;
+            font-weight: 400;
+        }
+
+        .about-us-title {
+            font-size: 32px;
+            line-height: 48px;
+            margin: 6px 0 16px 0;
+            width: 50%;
+        }
+
+        .about-us-sub-text {
+            margin: 0 15px;
+        }
+
+        .meet-your-team-title {
+            font-size: 32px;
+            line-height: 48px;
+            font-weight: 600;
+            margin-bottom: 40px;
+            margin-top: 80px;
+            text-align: center;
+        }
+    }
+}
