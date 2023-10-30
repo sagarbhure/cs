@@ -1,0 +1,31 @@
+.features-section {
+    padding: 4% 5% 0 5%;
+
+    .feature-header {
+        .feature-us-title {
+            color: var(--e-global-color-secondary);
+            margin-bottom: 1em;
+        }
+    }
+
+    .feature-body {
+        color: var(--e-global-color-secondary);
+        margin-bottom: 4em;
+
+        .feature-card {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            margin: 3em 0;
+
+            h5 {
+                margin: 2em 0;
+            }
+
+            p {
+                text-align: center;
+            }
+        }
+    }
+}

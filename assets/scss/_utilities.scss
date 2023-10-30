@@ -1,0 +1,21 @@
+.centered-row {
+    justify-content: center;
+}
+
+.invalid-input{
+    border: 2px solid red !important;
+}
+
+#my-form-status {
+    color: #fff;
+    margin: 20px;
+}
+
+/* Utilities */
+.no-padding {
+    padding: 0 !important;
+}
+
+.no-margin {
+    margin: 0 !important;
+}

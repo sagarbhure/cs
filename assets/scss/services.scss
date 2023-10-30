@@ -1,0 +1,31 @@
+.our-teams-section {
+  background: var(--e-global-color-blue-best);
+  padding: 129px 0 94px;
+  position: relative;
+
+  &:before {
+    background: url(../images//who-we-before.png);
+    content: "";
+    width: 445px;
+    height: 406px;
+    position: absolute;
+    top: -134px;
+    left: -94px;
+  
+    @media screen and (max-width: 1440px) {
+      top: -186px;
+      left: -176px;
+    }
+  }
+
+  .who-we-right-fig {
+    position: absolute;
+    top: -46%;
+    right: -27%;
+  
+    @media screen and (max-width: 1440px) {
+      top: -49%;
+      right: -62%;
+    }
+  }
+}
