@@ -7,6 +7,13 @@
     padding: 3% 5% 0 5%;
     position: relative;
 
+    .footer-content {
+
+      @media screen and (max-width: 767px) {
+        text-align: center;
+      }
+    }
+
     .footer-section-text {
         font-size: 18px;
         font-weight: 400;
@@ -19,6 +26,10 @@
         height: 150px;
         align-items: center;
         justify-content: center;
+
+        @media screen and (max-width: 767px) {
+          height: 60px;
+        }
 
         .useful-footer li, .social-media-list li{
             color: var(--e-global-color-secondary);

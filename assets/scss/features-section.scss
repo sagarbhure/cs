@@ -19,8 +19,16 @@
             align-items: center;
             margin: 3em 0;
 
+            @media screen and (max-width: 700px) {
+                margin: 1em 0;
+            }
+
             h5 {
                 margin: 2em 0;
+
+                @media screen and (max-width: 700px) {
+                    margin: 1em 0;
+                }
             }
 
             p {

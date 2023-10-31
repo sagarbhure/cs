@@ -11,6 +11,11 @@ h1 {
   font-weight: 700;
   word-spacing: 0px;
   letter-spacing: 0px; }
+  @media screen and (max-width: 700px) {
+    h1 {
+      font-size: 50px;
+      line-height: 50px;
+      font-weight: 400; } }
 
 h2 {
   font-size: 52px;
@@ -208,6 +213,10 @@ a {
         align-items: unset;
         text-align: unset;
         margin-left: 0; } }
+    @media screen and (max-width: 991px) {
+      .home-header-section .main-header .navbar-collapse ul li {
+        margin-left: 0 !important;
+        text-align: end; } }
     @media screen and (max-width: 1250px) {
       .home-header-section .main-header button:focus {
         outline: none; } }
@@ -277,6 +286,9 @@ a {
     .home-banner-section .banner-container-box .home-banner-text h1 {
       margin-bottom: 20px;
       color: var(--e-global-color-secondary); }
+      @media screen and (max-width: 700px) {
+        .home-banner-section .banner-container-box .home-banner-text h1 {
+          margin-bottom: 30px; } }
   .home-banner-section .banner-container-box .banner-paragraph {
     font-size: 22px;
     font-weight: 400;
@@ -285,6 +297,9 @@ a {
     margin-bottom: 30px;
     color: var(--e-global-color-text);
     padding-right: 10px; }
+    @media screen and (max-width: 700px) {
+      .home-banner-section .banner-container-box .banner-paragraph {
+        margin-bottom: 40px; } }
   .home-banner-section .banner-container-box .banner-btn a {
     color: var(--e-global-color-secondary);
     background: var(--e-global-color-accent);
@@ -388,11 +403,18 @@ a {
       .contact-us .contact-us-body .contact-form-container .contact-form .contact-form-header, .contact-us .contact-us-body .contact-form-container .contact-form .contact-form-body {
         padding: 3em 5em;
         border-radius: 5px; }
+        @media screen and (max-width: 1200px) {
+          .contact-us .contact-us-body .contact-form-container .contact-form .contact-form-header, .contact-us .contact-us-body .contact-form-container .contact-form .contact-form-body {
+            padding: 2em 3em; } }
       .contact-us .contact-us-body .contact-form-container .contact-form .contact-form-header {
         background: #D3D5DD; }
         .contact-us .contact-us-body .contact-form-container .contact-form .contact-form-header .contact-form-title {
           display: flex;
           align-items: center; }
+          @media screen and (max-width: 1200px) {
+            .contact-us .contact-us-body .contact-form-container .contact-form .contact-form-header .contact-form-title {
+              align-items: flex-start;
+              justify-content: left; } }
           .contact-us .contact-us-body .contact-form-container .contact-form .contact-form-header .contact-form-title .icon {
             width: 64px;
             height: 64px;
@@ -556,8 +578,14 @@ a {
     .about-us-container .about-us-body .about-us-title {
       font-size: 32px;
       line-height: 48px;
-      margin: 6px 0 16px 0;
+      margin: 6px 0 20px 0;
       width: 50%; }
+      @media screen and (max-width: 900px) {
+        .about-us-container .about-us-body .about-us-title {
+          width: 70%; } }
+      @media screen and (max-width: 700px) {
+        .about-us-container .about-us-body .about-us-title {
+          width: 100%; } }
     .about-us-container .about-us-body .about-us-sub-text {
       margin: 0 15px; }
     .about-us-container .about-us-body .meet-your-team-title {
@@ -683,6 +711,9 @@ a {
   overflow: hidden;
   padding: 3% 5% 0 5%;
   position: relative; }
+  @media screen and (max-width: 767px) {
+    .footer-section .footer-content {
+      text-align: center; } }
   .footer-section .footer-section-text {
     font-size: 18px;
     font-weight: 400;
@@ -693,6 +724,9 @@ a {
     height: 150px;
     align-items: center;
     justify-content: center; }
+    @media screen and (max-width: 767px) {
+      .footer-section .useful-footer-container {
+        height: 60px; } }
     .footer-section .useful-footer-container .useful-footer li, .footer-section .useful-footer-container .social-media-list li {
       color: var(--e-global-color-secondary);
       margin-bottom: 8px;
@@ -728,7 +762,13 @@ a {
       justify-content: center;
       align-items: center;
       margin: 3em 0; }
+      @media screen and (max-width: 700px) {
+        .features-section .feature-body .feature-card {
+          margin: 1em 0; } }
       .features-section .feature-body .feature-card h5 {
         margin: 2em 0; }
+        @media screen and (max-width: 700px) {
+          .features-section .feature-body .feature-card h5 {
+            margin: 1em 0; } }
       .features-section .feature-body .feature-card p {
         text-align: center; }
