@@ -73,6 +73,10 @@
                 .contact-form-header, .contact-form-body{
                     padding: 3em 5em;
                     border-radius: 5px;
+
+                    @media screen and (max-width: 1200px) {
+                      padding: 2em 3em;
+                    }
                 }
     
                 .contact-form-header {
@@ -81,6 +85,11 @@
                     .contact-form-title {
                         display: flex;
                         align-items: center;
+
+                        @media screen and (max-width: 1200px) {
+                          align-items: flex-start;
+                          justify-content: left;
+                        }
     
                         .icon {
                             width: 64px;

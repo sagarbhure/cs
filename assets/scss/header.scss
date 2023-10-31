@@ -158,11 +158,21 @@
       }
     }
 
-    .navbar-collapse ul {
-      @media screen and (max-width: 1250px) {
-        align-items: unset;
-        text-align: unset;
-        margin-left: 0;
+    .navbar-collapse {
+
+      ul {
+        @media screen and (max-width: 1250px) {
+          align-items: unset;
+          text-align: unset;
+          margin-left: 0;
+        }
+
+        li {
+          @media screen and (max-width: 991px) {
+            margin-left: 0 !important;
+            text-align: end;
+          }
+        }
       }
     }
 
@@ -264,6 +274,10 @@
       h1 {
         margin-bottom:20px;
         color: var(--e-global-color-secondary);
+
+        @media screen and (max-width: 700px) {
+          margin-bottom: 30px;
+        }
       }
     }
 
@@ -275,6 +289,10 @@
       margin-bottom: 30px;
       color: var(--e-global-color-text);
       padding-right: 10px;
+
+      @media screen and (max-width: 700px) {
+        margin-bottom: 40px;
+      }
     }
 
     .banner-btn {

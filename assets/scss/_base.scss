@@ -9,12 +9,18 @@ html {
 }
 
 h1 {
-    font-size:70px;
-    line-height:70px;
-    font-weight:700;
-    word-spacing: 0px;
-    letter-spacing: 0px;
+  font-size:70px;
+  line-height:70px;
+  font-weight:700;
+  word-spacing: 0px;
+  letter-spacing: 0px;
+
+  @media screen and (max-width: 700px) {
+    font-size:50px;
+    line-height:50px;
+    font-weight:400;
   }
+}
   
   h2 {
     font-size:52px;
