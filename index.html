@@ -27,7 +27,6 @@
       sizes="16x16"
       href="assets/images/favicons/favicon-16x16.png"
     />
-    <link rel="manifest" href="assets/images/favicons/site.webmanifest" />
     <link
       rel="icon"
       type="image/png"
@@ -80,20 +79,20 @@
                   <li class="nav-item">
                     <a
                       class="nav-link text-decoration-none navbar-text-color"
-                      href="#about-us-section"
+                      href="#about-us"
                       >About us</a
                     >
                   </li>
                   <li class="nav-item">
                     <a
                       class="nav-link text-decoration-none navbar-text-color"
-                      href="#services-section"
+                      href="#services"
                       >Services</a
                     >
                   </li>
 
                   <li class="list-unstyled d-lg-inline-block">
-                    <a class="nav-link contact" href="#contact-section"
+                    <a class="nav-link contact" href="#contact-us"
                       >Contact us</a
                     >
                   </li>
@@ -127,11 +126,11 @@
                     safe and resilient in a connected world.
                   </p>
                   <div class="banner-btn discover-btn-banner">
-                    <a href="about.html" class="text-decoration-none"
+                    <a href="#about-us" class="text-decoration-none"
                       >Know More</a
                     >
                     <a
-                      href="mailto:support@capturesecure.com"
+                      href="#contact-us"
                       class="text-decoration-none play-button"
                       >Schedule Demo</a
                     >
@@ -161,7 +160,7 @@
     <!-- Services Section -->
     <section
       class="features-section our-teams-section overflow-hidden position-relative"
-      id="services-section"
+      id="services"
     >
       <figure class="who-we-right-fig">
         <img src="./assets/images/who-we-right.png" alt="" class="star" />
@@ -278,7 +277,7 @@
     <!-- Services Section End -->
 
     <!--About us Section -->
-    <section class="overflow-hidden about-us-container" id="about-us-section">
+    <section class="overflow-hidden about-us-container" id="about-us">
       <div class="container-fluid">
         <div class="row">
           <div class="col-12">
@@ -342,7 +341,7 @@
     <!--About us Section End -->
 
     <!-- Contact Form-Section -->
-    <section class="contact-us" id="contact-section">
+    <section class="contact-us" id="contact-us">
       <figure class="about-left-back-img">
         <img src="./assets/images/contact-before-img.png" alt="" class="star" />
       </figure>
@@ -487,11 +486,11 @@
                             </div>
                             <div class="col-md-12 col-lg-6">
                               <input
-                                type="text"
+                                type="number"
                                 name="budget"
                                 id="budget"
                                 class="form-control input-fill"
-                                placeholder="Budget"
+                                placeholder="Budget (Optional)"
                               />
                             </div>
                           </div>
@@ -503,16 +502,25 @@
                               <textarea
                                 class="form-control input-fill"
                                 rows="4"
-                                placeholder="Event details"
+                                id="comments"
+                                placeholder="Write about your requirements"
                               ></textarea>
                             </div>
                           </div>
 
                           <div class="row">
+                            <div id="my-form-status"></div>
                             <div class="col-12">
                               <button
                                 class="btn btn-primary btn-block submit-form"
+                                id="submit-now"
+                                type="submit"
                               >
+                                <i
+                                  class="fa-sharp fa-solid fa-spinner fa-spin"
+                                  id="form-spinner"
+                                  style="display: none"
+                                ></i>
                                 Send
                               </button>
 
@@ -565,39 +573,27 @@
               <ul class="useful-footer">
                 <li>
                   <a
-                    href="#hero-section"
-                    class="text-decoration-none footer-link-p"
-                  >
-                    Home
-                  </a>
-                </li>
-                <li>
-                  <a
-                    href="#services-section"
-                    class="text-decoration-none footer-link-p"
-                  >
-                    Services
-                  </a>
-                </li>
-                <li>
-                  <a
-                    href="#about-us-section"
+                    href="#about-us"
                     class="text-decoration-none footer-link-p"
                   >
                     About us
                   </a>
                 </li>
                 <li>
-                  <a href="#" class="text-decoration-none footer-link-p">
-                    Privacy
-                  </a>
-                </li>
-                <li>
                   <a
-                    href="#contact-section"
+                    href="#services"
                     class="text-decoration-none footer-link-p"
                   >
-                    Contact
+                    Services
+                  </a>
+                </li>
+
+                <li>
+                  <a
+                    href="#contact-us"
+                    class="text-decoration-none footer-link-p"
+                  >
+                    Contact us
                   </a>
                 </li>
               </ul>
@@ -791,7 +787,6 @@
     <script src="assets/js/jquery-3.6.0.min.js"></script>
     <script src="assets/js/bootstrap.min.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script src="assets/js/text-animations.js"></script>
-    <script src="assets/js/custom-script.js"></script>
+    <script src="assets/js/main.min.js"></script>
   </body>
 </html>

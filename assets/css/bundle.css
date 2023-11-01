@@ -85,6 +85,20 @@ a {
     opacity: 0;
     transform: translateZ(-1000em); } }
 
+@keyframes stroke {
+  100% {
+    stroke-dashoffset: 0; } }
+
+@keyframes scale {
+  0%, 100% {
+    transform: none; }
+  50% {
+    transform: scale3d(1.1, 1.1, 1); } }
+
+@keyframes fill {
+  100% {
+    box-shadow: inset 0px 0px 0px 30px #4bb71b; } }
+
 :root {
   --e-global-color-primary: #242b44;
   --e-global-color-secondary: #ffffff;
@@ -104,13 +118,6 @@ a {
 
 .centered-row {
   justify-content: center; }
-
-.invalid-input {
-  border: 2px solid red !important; }
-
-#my-form-status {
-  color: #fff;
-  margin: 20px; }
 
 /* Utilities */
 .no-padding {
@@ -244,17 +251,14 @@ a {
         left: -272px; } }
 
 .home-banner-section {
-  padding-top: 217px;
-  padding-bottom: 213px; }
+  padding-top: 120px;
+  padding-bottom: 100px; }
   @media screen and (max-width: 991px) {
     .home-banner-section {
       padding-top: 70px;
       padding-bottom: 50px; } }
   .home-banner-section .banner-container-box .banner-img-content figure {
-    margin-left: 0;
-    position: absolute;
-    top: -160px;
-    left: 20px; }
+    margin-left: 0; }
     @media screen and (max-width: 1440px) {
       .home-banner-section .banner-container-box .banner-img-content figure {
         top: -76px;
@@ -318,6 +322,10 @@ a {
       background: var(--e-global-color-hover) !important;
       color: var(--e-global-color-secondary);
       transition: ease-in-out 0.3s; }
+    @media screen and (max-width: 528px) {
+      .home-banner-section .banner-container-box .banner-btn a {
+        padding: 15px 40px 16px 39px;
+        font-size: 16px; } }
   .home-banner-section .banner-container-box .banner-btn .play-button {
     padding: 19px 25px;
     margin-left: 14px;
@@ -447,10 +455,50 @@ a {
         margin: 2em 0 1em 0; }
       .contact-us .contact-us-body .contact-form-container .contact-form .contact-form-body .submit-form {
         background-color: #242b44;
+        border-color: #242b44;
         height: 48px;
         margin: 1em 0; }
+        .contact-us .contact-us-body .contact-form-container .contact-form .contact-form-body .submit-form:focus {
+          border-color: #3c4666;
+          box-shadow: 0 0 0 0.2rem #3c4666; }
       .contact-us .contact-us-body .contact-form-container .contact-form .contact-form-body .contact-us-link {
         color: #242b44; }
+      .contact-us .contact-us-body .contact-form-container .contact-form .contact-form-body .invalid-input {
+        border: 2px solid red !important; }
+      .contact-us .contact-us-body .contact-form-container .contact-form .contact-form-body #my-form-status {
+        margin: 20px 0 0 0;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%; }
+        .contact-us .contact-us-body .contact-form-container .contact-form .contact-form-body #my-form-status .checkmark {
+          width: 24px;
+          height: 24px;
+          border-radius: 50%;
+          display: block;
+          stroke-width: 2;
+          stroke: #4bb71b;
+          stroke-miterlimit: 10;
+          box-shadow: inset 0px 0px 0px #4bb71b;
+          animation: fill .4s ease-in-out .4s forwards, scale .3s ease-in-out .9s both;
+          position: relative;
+          top: 1px;
+          right: 10px;
+          margin: 0 auto; }
+          .contact-us .contact-us-body .contact-form-container .contact-form .contact-form-body #my-form-status .checkmark .checkmark__circle {
+            stroke-dasharray: 166;
+            stroke-dashoffset: 166;
+            stroke-width: 2;
+            stroke-miterlimit: 10;
+            stroke: #4bb71b;
+            fill: #fff;
+            animation: stroke 0.6s cubic-bezier(0.65, 0, 0.45, 1) forwards; }
+          .contact-us .contact-us-body .contact-form-container .contact-form .contact-form-body #my-form-status .checkmark .checkmark__check {
+            transform-origin: 50% 50%;
+            stroke-dasharray: 48;
+            stroke-dashoffset: 48;
+            animation: stroke 0.3s cubic-bezier(0.65, 0, 0.45, 1) 0.8s forwards; }
 
 .contact-us.form-control {
   display: block;

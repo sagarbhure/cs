@@ -213,8 +213,8 @@
 }
 
 .home-banner-section {
-  padding-top: 217px;
-  padding-bottom: 213px;
+  padding-top: 120px;
+  padding-bottom: 100px;
 
   @media screen and (max-width: 991px) {
     padding-top: 70px;
@@ -227,9 +227,6 @@
 
       figure {
         margin-left: 0;
-        position: absolute;
-        top: -160px;
-        left: 20px;
 
         @media screen and (max-width: 1440px) {
           top: -76px;
@@ -314,6 +311,11 @@
           background:var(--e-global-color-hover) !important;
           color: var(--e-global-color-secondary) ;
           transition: ease-in-out 0.3s;
+        }
+
+        @media screen and (max-width: 528px) {
+          padding: 15px 40px 16px 39px;
+          font-size: 16px;
         }
       }
     }
