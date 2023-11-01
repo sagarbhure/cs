@@ -115,22 +115,22 @@
                     }
 
                     input.form-control, textarea.form-control {
-                        display: block;
-                        width: 100%;
-                        font-size: 16px;
-                        font-weight: 400;
-                        line-height: 20px;
-                        color: #9C9DA7;
-                        background-color: #D3D5DD;
-                        background-clip: padding-box;
-                        border: none;
-                        transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
-                        padding: 18px 31px;
-                      }
+                      display: block;
+                      width: 100%;
+                      font-size: 16px;
+                      font-weight: 400;
+                      line-height: 20px;
+                      color: #9C9DA7;
+                      background-color: #D3D5DD;
+                      background-clip: padding-box;
+                      border: none;
+                      transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+                      padding: 18px 31px;
+                    }
 
-                      input.form-control {
-                        height: 48px;
-                      }
+                    input.form-control {
+                      height: 48px;
+                    }
     
                     .optional-label {
                         margin: 2em 0 1em 0;
@@ -138,13 +138,65 @@
                     
                     .submit-form {
                         background-color: #242b44;
+                        border-color: #242b44;
                         height: 48px;
                         margin: 1em 0;
+
+                        &:focus {
+                          border-color: #3c4666;
+                          box-shadow: 0 0 0 0.2rem #3c4666;
+                        }
                     }
                     
                     .contact-us-link{
                         color: #242b44;
                     }
+
+                    .invalid-input {
+                      border: 2px solid red !important;
+                    }
+
+                    #my-form-status {
+                      margin: 20px 0 0 0;
+                      text-align: center;
+                      display: flex;
+                      justify-content: center;
+                      align-items: center;
+                      width: 100%;
+
+                      .checkmark {
+                        width: 24px;
+                        height: 24px;
+                        border-radius: 50%;
+                        display: block;
+                        stroke-width: 2;
+                        stroke: #4bb71b;
+                        stroke-miterlimit: 10;
+                        box-shadow: inset 0px 0px 0px #4bb71b;
+                        animation: fill .4s ease-in-out .4s forwards, scale .3s ease-in-out .9s both;
+                        position:relative;
+                        top: 1px;
+                        right: 10px;
+                        margin: 0 auto;
+
+                        .checkmark__circle {
+                            stroke-dasharray: 166;
+                            stroke-dashoffset: 166;
+                            stroke-width: 2;
+                            stroke-miterlimit: 10;
+                            stroke: #4bb71b;
+                            fill: #fff;
+                            animation: stroke 0.6s cubic-bezier(0.65, 0, 0.45, 1) forwards;
+                        }
+
+                        .checkmark__check {
+                            transform-origin: 50% 50%;
+                            stroke-dasharray: 48;
+                            stroke-dashoffset: 48;
+                            animation: stroke 0.3s cubic-bezier(0.65, 0, 0.45, 1) 0.8s forwards;
+                        }
+                    }
+                  }
                 }
             }
         }
@@ -213,16 +265,3 @@
     border:1px solid var(--e-global-color-accent);
     box-shadow: 0 0 0 0.2rem rgba(11, 27, 44, 0.25);
   }
-
-
-
-
-
-
-
-
-
-
-
-
-
