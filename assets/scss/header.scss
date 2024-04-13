@@ -2,7 +2,7 @@
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  background:var(--e-global-color-very-dark-blue);
+  background: var(--e-global-color-very-dark-blue);
   position: relative;
   overflow: hidden;
 
@@ -47,7 +47,7 @@
           }
         }
 
-        .active > a{
+        .active > a {
           color: var(--e-global-color-accent);
         }
       }
@@ -55,7 +55,7 @@
 
     .navbar-brand {
       margin-left: 0px;
-      padding-bottom:0px;
+      padding-bottom: 0px;
       margin-right: 181px;
 
       @media screen and (max-width: 1440px) {
@@ -66,21 +66,19 @@
 
     .navbar-light {
       .navbar-nav {
-
-        li.active>a:before {
+        li.active > a:before {
           @media screen and (max-width: 1440px) {
             top: -21px;
           }
         }
 
         .nav-link {
-          padding-left:8px;
+          padding-left: 8px;
           position: relative;
         }
       }
 
       .navbar-toggler {
-
         @media screen and (max-width: 1250px) {
           margin-left: auto;
           border: none !important;
@@ -90,7 +88,6 @@
         }
 
         .navbar-toggler-icon {
-
           @media screen and (max-width: 1250px) {
             background: var(--e-global-color-secondary);
             height: 2px;
@@ -159,7 +156,6 @@
     }
 
     .navbar-collapse {
-
       ul {
         @media screen and (max-width: 1250px) {
           align-items: unset;
@@ -183,7 +179,7 @@
     }
   }
 
-  .banner-right-img{
+  .banner-right-img {
     position: absolute;
     width: 1689px;
     height: 1262px;
@@ -222,9 +218,7 @@
   }
 
   .banner-container-box {
-
     .banner-img-content {
-
       figure {
         margin-left: 0;
 
@@ -232,14 +226,13 @@
           top: -76px;
           left: -30px;
         }
-  
+
         @media screen and (max-width: 991px) {
           display: none;
         }
       }
 
       .banner-img-width {
-
         @media screen and (max-width: 1440px) {
           width: 460px;
           margin-left: 108px;
@@ -269,7 +262,7 @@
       }
 
       h1 {
-        margin-bottom:20px;
+        margin-bottom: 20px;
         color: var(--e-global-color-secondary);
 
         @media screen and (max-width: 700px) {
@@ -306,10 +299,10 @@
         word-spacing: 2px;
         font-size: 20px;
         transition: ease-in-out 0.3s;
-        &:hover{
+        &:hover {
           transform: translateY(-5px);
-          background:var(--e-global-color-hover) !important;
-          color: var(--e-global-color-secondary) ;
+          background: var(--e-global-color-hover) !important;
+          color: var(--e-global-color-secondary);
           transition: ease-in-out 0.3s;
         }
 
@@ -324,7 +317,7 @@
       .play-button {
         padding: 19px 25px;
         margin-left: 14px;
-        background:var(--e-global-color-dark-blue2) !important;
+        background: var(--e-global-color-dark-blue2) !important;
         border: 1px solid var(--e-global-color-soft-blue);
 
         &:hover {

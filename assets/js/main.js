@@ -1,5 +1,3 @@
-import "../scss/index.scss";
-
 $(document).ready(function () {
   // Copyright Text
   $("#copyright-year").text(new Date().getFullYear());
@@ -37,7 +35,7 @@ $(document).ready(function () {
     } else {
       if (
         /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/.test(
-          emailInput.val()
+          emailInput.val(),
         )
       ) {
         isEmailValid = true;
@@ -88,7 +86,7 @@ $(document).ready(function () {
               <div>
                 Thank you for your submission 🙌. Our team will
                 be in touch with you soon.
-              </div>`
+              </div>`,
           );
           setTimeout(() => {
             $("#my-form-status").html("");

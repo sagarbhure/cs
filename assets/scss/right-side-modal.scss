@@ -1,64 +1,72 @@
 .modal-dialog {
-    position: fixed;
-    right: 0;
-    margin: 0;
-    width: 100%;
+  position: fixed;
+  right: 0;
+  margin: 0;
+  width: 100%;
+  height: 100%;
+  -webkit-transform: translate3d(0%, 0, 0);
+  -ms-transform: translate3d(0%, 0, 0);
+  -o-transform: translate3d(0%, 0, 0);
+  transform: translate3d(0%, 0, 0);
+
+  .modal-content {
+    background: var(--e-global-color-blue-best);
     height: 100%;
-    -webkit-transform: translate3d(0%, 0, 0);
-        -ms-transform: translate3d(0%, 0, 0);
-         -o-transform: translate3d(0%, 0, 0);
-            transform: translate3d(0%, 0, 0);
+    overflow-y: auto;
 
-    .modal-content {
-        background:var(--e-global-color-blue-best);
-        height: 100%;
-        overflow-y: auto;
+    .modal-header {
+      .modal-title {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: var(--e-global-color-secondary);
 
-        .modal-header {
-            .modal-title {
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                color: var(--e-global-color-secondary);
-
-                span {
-                    margin-left: 20px;
-                }
-            }
-            .close {
-                color: var(--e-global-color-secondary);
-            }
+        span {
+          margin-left: 20px;
         }
-
-        .modal-body {
-            .card {
-                margin: 1em;
-
-                h5 {
-                    display: flex;
-                    align-items: center;
-
-                    object {
-                        margin-right: 5px;
-                    }
-                }
-            }
-        }
+      }
+      .close {
+        color: var(--e-global-color-secondary);
+      }
     }
+
+    .modal-body {
+      .card {
+        margin: 1em;
+
+        h5 {
+          display: flex;
+          align-items: center;
+
+          object {
+            margin-right: 5px;
+          }
+        }
+      }
+    }
+  }
 }
 
 .modal.right.fade .modal-dialog {
-    -webkit-transition: opacity 0.3s linear, right 0.3s ease-out;
-       -moz-transition: opacity 0.3s linear, right 0.3s ease-out;
-         -o-transition: opacity 0.3s linear, right 0.3s ease-out;
-            transition: opacity 0.3s linear, right 0.3s ease-out;
+  -webkit-transition:
+    opacity 0.3s linear,
+    right 0.3s ease-out;
+  -moz-transition:
+    opacity 0.3s linear,
+    right 0.3s ease-out;
+  -o-transition:
+    opacity 0.3s linear,
+    right 0.3s ease-out;
+  transition:
+    opacity 0.3s linear,
+    right 0.3s ease-out;
 }
 
 .modal.right.fade.in .modal-dialog {
-    right: 0;
+  right: 0;
 }
 
 .modal-content {
-    border-radius: 0;
-    border: none;
+  border-radius: 0;
+  border: none;
 }

@@ -1,0 +1,24 @@
+.digifact-logo-color {
+  color: var(--white);
+}
+
+.digifact-hero-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.digifact-hero-heading {
+  color: var(--white);
+  font-weight: normal;
+}
+
+.digifact-hero-title {
+  text-align: center;
+}
+
+.feature-body {
+  .card {
+    background-color: #607d8b;
+  }
+}
