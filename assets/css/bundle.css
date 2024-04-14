@@ -133,15 +133,15 @@ a {
   --e-global-color-text: #afb6d2;
   --e-global-color-hover: #d88730;
   --e-global-color-dark-blue: #292a5c;
-  --e-global-color-yellow:#fdde47;
+  --e-global-color-yellow: #fdde47;
   --e-global-color-dark-blue2: #393a7f;
   --e-global-color-very-dark-blue: #262754;
   --e-global-color-soft-blue: #46479b;
-  --e-global-color-dark-blue3:#202046;
-  --e-global-color-blue-f:#333471;
-  --e-global-color-dark-bluish:#191A38;
-  --e-global-color-blue-best:#13132a;
-  --e-global-color-bar: #191A38;
+  --e-global-color-dark-blue3: #202046;
+  --e-global-color-blue-f: #333471;
+  --e-global-color-dark-bluish: #191a38;
+  --e-global-color-blue-best: #13132a;
+  --e-global-color-bar: #191a38;
 }
 
 .centered-row {
@@ -514,7 +514,7 @@ a {
 }
 .contact-us .contact-us-body {
   padding: 1% 5% 7% 5%;
-  background-color: #D3D5DD;
+  background-color: #d3d5dd;
 }
 .contact-us .contact-us-body .next-step-container h3 {
   color: #000;
@@ -540,17 +540,19 @@ a {
     top: 0 !important;
   }
 }
-.contact-us .contact-us-body .contact-form-container .contact-form .contact-form-header, .contact-us .contact-us-body .contact-form-container .contact-form .contact-form-body {
+.contact-us .contact-us-body .contact-form-container .contact-form .contact-form-header,
+.contact-us .contact-us-body .contact-form-container .contact-form .contact-form-body {
   padding: 3em 5em;
   border-radius: 5px;
 }
 @media screen and (max-width: 1200px) {
-  .contact-us .contact-us-body .contact-form-container .contact-form .contact-form-header, .contact-us .contact-us-body .contact-form-container .contact-form .contact-form-body {
+  .contact-us .contact-us-body .contact-form-container .contact-form .contact-form-header,
+  .contact-us .contact-us-body .contact-form-container .contact-form .contact-form-body {
     padding: 2em 3em;
   }
 }
 .contact-us .contact-us-body .contact-form-container .contact-form .contact-form-header {
-  background: #D3D5DD;
+  background: #d3d5dd;
 }
 .contact-us .contact-us-body .contact-form-container .contact-form .contact-form-header .contact-form-title {
   display: flex;
@@ -579,14 +581,15 @@ a {
 .contact-us .contact-us-body .contact-form-container .contact-form .contact-form-body .row > div {
   margin: 1em 0;
 }
-.contact-us .contact-us-body .contact-form-container .contact-form .contact-form-body input.form-control, .contact-us .contact-us-body .contact-form-container .contact-form .contact-form-body textarea.form-control {
+.contact-us .contact-us-body .contact-form-container .contact-form .contact-form-body input.form-control,
+.contact-us .contact-us-body .contact-form-container .contact-form .contact-form-body textarea.form-control {
   display: block;
   width: 100%;
   font-size: 16px;
   font-weight: 400;
   line-height: 20px;
-  color: #9C9DA7;
-  background-color: #D3D5DD;
+  color: #9c9da7;
+  background-color: #d3d5dd;
   background-clip: padding-box;
   border: none;
   transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
@@ -661,7 +664,7 @@ a {
   font-weight: 400;
   line-height: 20px;
   color: var(--e-global-color-text);
-  background-color: #D3D5DD;
+  background-color: #d3d5dd;
   background-clip: padding-box;
   border: none;
   border-radius: 14px;
@@ -979,19 +982,22 @@ a {
     height: 60px;
   }
 }
-.footer-section .useful-footer-container .useful-footer li, .footer-section .useful-footer-container .social-media-list li {
+.footer-section .useful-footer-container .useful-footer li,
+.footer-section .useful-footer-container .social-media-list li {
   color: var(--e-global-color-secondary);
   margin-bottom: 8px;
   margin-right: 15px;
   display: inline-block;
 }
-.footer-section .useful-footer-container .useful-footer li a, .footer-section .useful-footer-container .social-media-list li a {
+.footer-section .useful-footer-container .useful-footer li a,
+.footer-section .useful-footer-container .social-media-list li a {
   font-size: 18px;
   line-height: 20px;
   font-weight: 400;
   color: var(--e-global-color-text);
 }
-.footer-section .useful-footer-container .useful-footer li a:hover, .footer-section .useful-footer-container .social-media-list li a:hover {
+.footer-section .useful-footer-container .useful-footer li a:hover,
+.footer-section .useful-footer-container .social-media-list li a:hover {
   color: var(--e-global-color-accent);
 }
 .footer-section .line-break {
@@ -1060,5 +1066,6 @@ a {
 }
 
 .feature-body .card {
-  background-color: #607D8B;
+  background-color: #607d8b;
+  margin-bottom: 10px;
 }
