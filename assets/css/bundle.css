@@ -1069,3 +1069,62 @@ a {
   background-color: #607d8b;
   margin-bottom: 10px;
 }
+
+.usecases-section {
+  background: var(--e-global-color-soft-blue);
+  position: relative;
+}
+.usecases-section:before {
+  background: url(../images/background.svg);
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.usecases-section .who-we-right-fig {
+  position: absolute;
+  top: -46%;
+  right: -27%;
+}
+@media screen and (max-width: 1440px) {
+  .usecases-section .who-we-right-fig {
+    top: -49%;
+    right: -62%;
+  }
+}
+.usecases-section .usecases-details-container {
+  margin-top: 50px;
+}
+.usecases-section .usecases-details-container .image-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.usecases-section .usecases-details-container .image-container img {
+  width: 80%;
+  height: 70%;
+}
+.usecases-section .usecases-details-container .image-container .liveness-example {
+  width: 60%;
+  height: 80%;
+}
+.usecases-section .usecases-details-container .highlighted {
+  background-color: yellow;
+}
+.usecases-section .btn-group {
+  background: #007bff;
+}
+.usecases-section .btn-group .btn-outline-primary {
+  text-decoration: none;
+  color: #fff;
+  border-color: #fff;
+}
+.usecases-section .btn-group .highlighted {
+  background: rgba(77, 174, 79, 0.6901960784);
+}
+
+#offering {
+  margin-top: 60px;
+}

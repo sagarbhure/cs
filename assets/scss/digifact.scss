@@ -23,3 +23,72 @@
     margin-bottom: 10px;
   }
 }
+
+.usecases-section {
+  background: var(--e-global-color-soft-blue);
+  position: relative;
+  // height: 1900px;
+
+  &:before {
+    background: url(../images/background.svg);
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+
+  .who-we-right-fig {
+    position: absolute;
+    top: -46%;
+    right: -27%;
+
+    @media screen and (max-width: 1440px) {
+      top: -49%;
+      right: -62%;
+    }
+  }
+
+  .usecases-details-container {
+    margin-top: 50px;
+
+    .image-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      img {
+        width: 80%;
+        height: 70%;
+      }
+
+      .liveness-example {
+        width: 60%;
+        height: 80%;
+      }
+    }
+
+    .highlighted {
+      background-color: yellow;
+    }
+  }
+
+  .btn-group {
+    background: #007bff;
+
+    .btn-outline-primary {
+      text-decoration: none;
+      color: #fff;
+      border-color: #fff;
+    }
+
+    .highlighted {
+      background: #4dae4fb0;
+    }
+  }
+}
+
+#offering {
+  margin-top: 60px;
+}
